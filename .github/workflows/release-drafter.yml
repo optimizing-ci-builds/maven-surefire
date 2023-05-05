@@ -16,10 +16,8 @@
 # under the License.
    
 name: Release Drafter
-on:
-  push:
-    branches:
-      - master
+on: [push]
 jobs:
    update_release_draft:
       uses: apache/maven-gh-actions-shared/.github/workflows/release-drafter.yml@v2
+

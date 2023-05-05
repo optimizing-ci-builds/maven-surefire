@@ -17,9 +17,7 @@
 
 name: Verify
 
-on:
-  push:
-  pull_request:
+on: [push]
 
 jobs:
   build:
@@ -37,3 +35,4 @@ jobs:
         surefire-its/target/**/surefire-reports/*
         surefire-its/target/**/failsafe-reports/*
       timeout-minutes: 600
+
